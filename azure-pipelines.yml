@@ -8,12 +8,8 @@ trigger:
 
 pool:
   vmImage: windows-latest
-
-jobs:
-- deployment: VMDeploy
-  displayName: Deploy to VM
   environment: 
-    name: VMenv
+    name: myenv
 
 - task: Maven@3
   inputs:
